@@ -10,6 +10,12 @@ public class Commodity
 	float price;
 	kinds kind;
 
+	/**
+	 *
+	 * @param name 商品名称
+	 * @param price 商品价格，单位￥
+	 * @param kind 商品种类
+	 */
 	public Commodity(String name, float price, kinds kind)
 	{
 		this.name = name;
@@ -29,5 +35,7 @@ enum kinds
 	SNACK,
 	// 日用品
 	NECESSARY,
+	// 文具
+	STATIONERY,
 	// TODO 加入更多种类
 }
