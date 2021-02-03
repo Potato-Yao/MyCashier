@@ -1,7 +1,7 @@
 package com.potato;
 
 /**
- * @author 碳烤黄蜂
+ * @author Potato Yao
  */
 
 public class Commodity
@@ -28,12 +28,24 @@ public class Commodity
 		return name;
 	}
 
+	public float getPrice()
+	{
+		return price;
+	}
+
+	public Kinds getKind()
+	{
+		return kind;
+	}
+
 }
 
 enum Kinds
 {
 	// 蔬菜
 	VEGETABLE,
+	// 肉类
+	MEAT,
 	// 水果
 	FRUIT,
 	// 零食

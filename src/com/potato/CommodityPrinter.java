@@ -3,10 +3,10 @@ package com.potato;
 import java.util.Collection;
 
 /**
- * @author 碳烤黄蜂
+ * @author Potato Yao
  */
 
-public class OutSystem
+public class CommodityPrinter
 {
 	public void showCommodity()
 	{
@@ -14,9 +14,12 @@ public class OutSystem
 
 		Collection<Commodity> values = map.values();
 
+		int times = 0;
+
 		for (var i : values)
 		{
-			System.out.println(i.getName());
+			System.out.println(times + " " + i.getName() + "\t" + i.getPrice());
+			times++;
 		}
 	}
 }

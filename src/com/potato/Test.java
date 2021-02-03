@@ -1,14 +1,14 @@
 package com.potato;
 
 /**
- * @author 碳烤黄蜂
+ * @author Potato Yao
  */
 
 public class Test
 {
 	public static void main(String[] args)
 	{
-		OutSystem o = new OutSystem();
+		CommodityPrinter o = new CommodityPrinter();
 		o.showCommodity();
 	}
 }
