@@ -48,13 +48,13 @@ enum Kinds
 	MEAT,
 	// 水果
 	FRUIT,
-	// 零食
-	SNACK,
 	// 饮料
 	DRINK,
-	// 日用品
-	NECESSARY,
+	// 零食
+	SNACK,
 	// 文具
 	STATIONERY,
+	// 日用品
+	NECESSARY,
 	// TODO 加入更多种类
 }
