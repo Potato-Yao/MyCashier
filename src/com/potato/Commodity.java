@@ -11,7 +11,7 @@ public class Commodity
 	Kinds kind;
 
 	/**
-	 *
+	 * 构造器
 	 * @param name 商品名称
 	 * @param price 商品价格，单位￥
 	 * @param kind 商品种类

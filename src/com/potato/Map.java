@@ -8,7 +8,11 @@ import java.util.HashMap;
 
 public class Map
 {
-	public static HashMap<Integer, Commodity> map = new HashMap<>();
+	// 商品信息
+	public static HashMap<Integer, Commodity> commodity = new HashMap<>();
+	// 要买的物品信息
+	public HashMap<Commodity, Integer> shoppingCart = new HashMap<>();
+	// 商品id
 	static int id = 0;
 
 	/*
@@ -16,8 +20,8 @@ public class Map
 	 */
 	static
 	{
-		map.put(id++, new Commodity("Potato", 2, Kinds.VEGETABLE));
-		map.put(id++, new Commodity("Tomato", 2, Kinds.VEGETABLE));
+		commodity.put(id++, new Commodity("Potato", 2, Kinds.VEGETABLE));
+		commodity.put(id++, new Commodity("Tomato", 2, Kinds.VEGETABLE));
 	}
 
 	/*
@@ -25,8 +29,8 @@ public class Map
 	 */
 	static
 	{
-		map.put(id++, new Commodity("Beef", 20, Kinds.MEAT));
-		map.put(id++, new Commodity("Chicken", 20, Kinds.MEAT));
+		commodity.put(id++, new Commodity("Beef", 20, Kinds.MEAT));
+		commodity.put(id++, new Commodity("Chicken", 20, Kinds.MEAT));
 	}
 
 	/*
@@ -34,8 +38,8 @@ public class Map
 	 */
 	static
 	{
-		map.put(id++, new Commodity("Apple", 5, Kinds.FRUIT));
-		map.put(id++, new Commodity("Banana", 5, Kinds.FRUIT));
+		commodity.put(id++, new Commodity("Apple", 5, Kinds.FRUIT));
+		commodity.put(id++, new Commodity("Banana", 5, Kinds.FRUIT));
 	}
 
 	/*
@@ -43,8 +47,8 @@ public class Map
 	 */
 	static
 	{
-		map.put(id++, new Commodity("Milk", 5, Kinds.DRINK));
-		map.put(id++, new Commodity("Coffee", 5, Kinds.DRINK));
+		commodity.put(id++, new Commodity("Milk", 5, Kinds.DRINK));
+		commodity.put(id++, new Commodity("Coffee", 5, Kinds.DRINK));
 	}
 
 	/*
@@ -52,8 +56,8 @@ public class Map
 	 */
 	static
 	{
-		map.put(id++, new Commodity("Potato chips", 10, Kinds.SNACK));
-		map.put(id++, new Commodity("Apple pie", 10, Kinds.SNACK));
+		commodity.put(id++, new Commodity("Potato chips", 10, Kinds.SNACK));
+		commodity.put(id++, new Commodity("Apple pie", 10, Kinds.SNACK));
 	}
 
 	/*
@@ -61,8 +65,8 @@ public class Map
 	 */
 	static
 	{
-		map.put(id++, new Commodity("Notebook", 10, Kinds.STATIONERY));
-		map.put(id++, new Commodity("Pen", 1, Kinds.STATIONERY));
+		commodity.put(id++, new Commodity("Notebook", 10, Kinds.STATIONERY));
+		commodity.put(id++, new Commodity("Pen", 1, Kinds.STATIONERY));
 	}
 
 	/*
@@ -70,7 +74,7 @@ public class Map
 	 */
 	static
 	{
-		map.put(id++, new Commodity("Teeth blush", 10, Kinds.NECESSARY));
-		map.put(id++, new Commodity("Towel", 20, Kinds.NECESSARY));
+		commodity.put(id++, new Commodity("Teeth blush", 10, Kinds.NECESSARY));
+		commodity.put(id++, new Commodity("Towel", 20, Kinds.NECESSARY));
 	}
 }
