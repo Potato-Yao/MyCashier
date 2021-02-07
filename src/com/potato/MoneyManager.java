@@ -6,4 +6,5 @@ package com.potato;
 
 public class MoneyManager
 {
+
 }

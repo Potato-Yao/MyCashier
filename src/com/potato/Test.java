@@ -11,5 +11,6 @@ public class Test
 		Output.showCommodity();
 		Input i = new Input();
 		i.purchasedItemsInput();
+
 	}
 }
