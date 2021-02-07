@@ -11,7 +11,9 @@ public class MoneyManager
 	static float lumpSum;
 	static Collection<Commodity> keys = com.potato.Map.shoppingCart.keySet();
 
-
+	/**
+	 * 结算总额
+	 */
 	public static void manager()
 	{
 		for (var key : keys)

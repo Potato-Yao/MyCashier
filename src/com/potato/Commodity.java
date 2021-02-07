@@ -40,6 +40,9 @@ public class Commodity
 
 }
 
+/**
+ * 商品种类
+ */
 enum Kinds
 {
 	// 蔬菜
