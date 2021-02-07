@@ -56,5 +56,5 @@ enum Kinds
 	STATIONERY,
 	// 日用品
 	NECESSARY,
-	// TODO 加入更多种类
+	// FIXME 加入更多种类
 }

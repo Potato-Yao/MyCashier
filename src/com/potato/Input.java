@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class Input
 {
-	public void purchasedItemsInput()
+	public static void purchasedItemsInput()
 	{
 		while (true)
 		{

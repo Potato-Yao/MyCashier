@@ -33,13 +33,14 @@ public class Output
 	 * 结账页面
 	 * @param lumpSum 总金额
 	 */
-	public void billPlease(float lumpSum)
+	public static void billPlease(float lumpSum)
 	{
 		String detail = "d";  // 查看详情使用
 		String settleAccounts = "s";  // 结账使用
+		String again = "a";  // 重复查看
 
 		System.out.println("您的总金额为：");
-		System.out.println(lumpSum);
+		System.out.println(lumpSum + "￥");
 
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("输入d查看详情，输入s结账");
@@ -47,18 +48,25 @@ public class Output
 		String choose = scanner.nextLine();
 		choose = choose.toLowerCase();
 		flag:
-		if (choose.equals(detail))
+		while (true)
 		{
-			// TODO 展示详情
-		}
-		else if(choose.equals(settleAccounts))
-		{
-			System.out.println("支付成功");
-		}
-		else
-		{
-			System.out.println("请输入正经的东西");
-			break flag;
+			showCheckoutDetails();
+			System.out.println("重复查看输入a，结账输入s");
+			choose = scanner.nextLine();
+			if (choose.equals(again))
+			{
+				showCheckoutDetails();
+			}
+			else if (choose.equals(settleAccounts))
+			{
+				System.out.println("支付成功");
+				break;
+			}
+			else
+			{
+				System.out.println("请输入正经的东西！");
+				break flag;
+			}
 		}
 		scanner.close();
 	}
@@ -66,7 +74,15 @@ public class Output
 	/**
 	 * 显示订单详情
 	 */
-	public void showCheckoutDetails()
+	public static void showCheckoutDetails()
 	{
+		System.out.println("您购买的物品如下");
+		var keys = MoneyManager.keys;
+
+		System.out.println("名词\t数量\t单价");
+		for (var key : keys)
+		{
+			System.out.println(key.getName() + "\t" + Map.shoppingCart.get(key) + "\t" + key.getPrice() + "￥");
+		}
 	}
 }
