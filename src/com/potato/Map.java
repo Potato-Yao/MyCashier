@@ -11,7 +11,7 @@ public class Map
 	// 商品信息
 	public static HashMap<Integer, Commodity> commodity = new HashMap<>();
 	// 要买的物品信息
-	public HashMap<Commodity, Integer> shoppingCart = new HashMap<>();
+	public static HashMap<Commodity, Integer> shoppingCart = new HashMap<>();
 	// 商品id
 	static int id = 0;
 
