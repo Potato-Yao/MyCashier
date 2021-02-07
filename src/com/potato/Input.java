@@ -8,6 +8,9 @@ import java.util.Scanner;
 
 public class Input
 {
+	/**
+	 * 输入购买的商品和数量
+	 */
 	public static void purchasedItemsInput()
 	{
 		while (true)
