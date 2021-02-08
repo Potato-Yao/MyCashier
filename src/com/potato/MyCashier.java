@@ -161,7 +161,6 @@ class Output
 
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("输入d查看详情，输入s结账");
-		// Ctrl+Alt+Shift+J
 		String choose = scanner.nextLine();
 		choose = choose.toLowerCase();
 		flag:
