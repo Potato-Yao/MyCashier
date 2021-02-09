@@ -94,6 +94,14 @@ class Map
 		commodity.put(id++, new Commodity("Teeth blush", 10, Kinds.NECESSARY));
 		commodity.put(id++, new Commodity("Towel", 20, Kinds.NECESSARY));
 	}
+	/*
+	 这里放工具类
+	 */
+	static
+	{
+		commodity.put(id++, new Commodity("Hammer", 30, Kinds.TOOL));
+		commodity.put(id++, new Commodity("Wrench", 30, Kinds.TOOL));
+	}
 }
 
 /**
@@ -261,6 +269,8 @@ enum Kinds
 	STATIONERY,
 	// 日用品
 	NECESSARY,
+	// 工具类
+	TOOL,
 	// FIXME 加入更多种类
 }
 
